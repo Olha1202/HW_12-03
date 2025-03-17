@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../image/shillong-2847249\ 1.png);
+    background-size: cover;
+    background-position: top center;
+    font-family: Inter, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px 80px 60px;
+    align-items: center;
+}
+
+button{
+    width: 193px;
+    height: 61px;
+    background: rgb(33, 158, 188);
+    border-radius: 6px;
+    border: none;
+    padding: 16px 40px 16px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+button:hover{
+    width: 193px;
+    height: 61px;
+    background: rgb(22, 95, 113);
+    border-radius: 6px;
+    border: none;
+    padding: 16px 40px 16px 40px;
+    color: rgb(173, 166, 166);
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+.menu{
+    font-size: 32px;
+    color: white;
+    padding-left: 30px;
+    display: inline-block;
+}
+
+.menu:hover{
+    font-size: 32px;
+    color: rgb(173, 166, 166);
+    padding-left: 30px;
+    display: inline-block;
+}
+
+main{
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 72px;
+}
+
+#left{
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 103px;    
+    width: 860px;
+    height: auto;
+    border-radius: 20px;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+h1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    font-family: Lora, serif;
+    font-weight: 600;
+    font-size: 88px;
+    line-height: 113px;
+    letter-spacing: 0;
+    color: rgb(255, 255, 255);
+    font-optical-sizing: auto;    
+    font-style: normal;
+    padding-bottom: 117px;
+}
+
+.explore{
+    padding-left: 52px;
+    padding-bottom: 45px;
+}
+
+label{
+    width: 482px;
+    height: 41px;
+    left: 1012px;
+    top: 544px;
+    color: rgb(255, 255, 255);
+    font-family: Lora;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-right: 20px;
+}
+
+select{
+    width: 124px;
+    height: 51px;
+    padding: 11px 20px 11px 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.photo-block{
+    display: flex;    
+    padding-right: 21px;
+    position: relative;
+    gap: 39px;    
+}
+
+.photo{
+    display: flex;    
+}
+
+.name-photo{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-top: 20px;
+    position: absolute;
+    top: 100%;
+}
+
+.slide-left{
+    width: 32px;
+    height: 32px;
+    color: rgb(38, 43, 44);
+    text-align: center;
+    background-color: transparent;
+    font-size: 30px;
+    padding-right: 30px;
+    padding-top: 152px;
+    
+}
+
+.slide-right{
+    width: 32px;
+    height: 32px;
+    color: rgb(38, 43, 44);
+    text-align: center;
+    background-color: transparent;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 152px;
+    
+}
+
+a{
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(33, 158, 188);
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 2.33%;
+}
