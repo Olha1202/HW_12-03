@@ -207,13 +207,15 @@ a{
     :root{
         --background-image: none;
         --font-color:  black;
-        --border-color: 1px solid rgb(0, 0, 0);
-           
+        --border-color: 1px solid rgb(0, 0, 0);           
     }
     
     body{
         height: auto;        
         }
+    button{
+        width: 184px;        
+    }
     main{
         display: grid;
         grid-template-columns: 100%;
@@ -231,13 +233,16 @@ a{
     h1{
          width: 800px;    
         text-align: center;
+        font-size: 70px;
+        line-height: 80px;
+        padding-bottom: 8%;
         }
     .explore{
         padding-left: 0;    
         }
     .photo-block{
         display: flex;                
-        gap: 39px;
+        gap: 15px;
         align-items: center;
         text-align: center;
         }
@@ -250,6 +255,6 @@ a{
     }
     a{
         padding-right: 0;
-        padding-top: 30px;  
+        padding-top: 30px;         
     }
     }
