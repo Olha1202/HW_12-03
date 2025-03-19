@@ -6,7 +6,7 @@ body{
     height: 100%;
     width: 100%;
     margin: 0 auto;
-    background-image: url(../image/shillong-2847249\ 1.png);
+    background-image: var(--background-image);
     background-size: cover;
     background-position: top center;
     font-family: Inter, sans-serif;
@@ -34,7 +34,7 @@ button{
     border-radius: 6px;
     border: none;
     padding: 16px 40px 16px 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(255,255,255);    
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0;
@@ -57,7 +57,7 @@ button:hover{
     
 .menu{
     font-size: 32px;
-    color: white;
+    color: var(--font-color);
     padding-left: 30px;
     display: inline-block;
 }
@@ -72,7 +72,7 @@ button:hover{
 main{
     width: 100%;
     display: grid;
-    grid-template-columns: 43.27% auto;
+    grid-template-columns: 43.27% auto;    
     column-gap: 86px;        
 }
 
@@ -99,14 +99,15 @@ h1{
     font-size: 88px;
     line-height: 113px;
     letter-spacing: 0;
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     font-optical-sizing: auto;    
     font-style: normal;
     padding-bottom: 13%;
 }
 
 .explore{
-    padding-bottom: 5%;    
+    padding-bottom: 5%;
+    padding-left: 70px;    
 }
 
 label{
@@ -114,7 +115,7 @@ label{
     height: 41px;
     left: 1012px;
     top: 544px;
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     font-family: Lora;
     font-size: 32px;
     font-weight: 600;
@@ -128,10 +129,10 @@ select{
     width: 124px;
     height: 51px;
     padding: 11px 20px 11px 20px;
-    border: 1px solid rgb(255, 255, 255);
+    border: var(--border-color);
     border-radius: 6px;
     background: transparent;
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0;
@@ -140,17 +141,18 @@ select{
 
 .photo-block{
     display: grid;
-    grid-template-columns: 52px repeat(3, 239px) 52px;    
+    grid-template-columns: 32px repeat(3, 239px) 32px;    
     /*padding-right: 21px;*/    
     column-gap: 39px;
-    align-items: flex-start;        
+    align-items: center;        
 }
-/*.photo{
-    display: grid;   
-}*/
+.photo{
+    display: grid;  
+    justify-items: stretch; 
+}
    
 .name-photo{
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -168,7 +170,7 @@ select{
     background-color: transparent;
     font-size: 30px;
     /*padding-right: 20px;*/
-    padding-top: 152px;    
+    /*padding-top: 152px; */   
 }
 
 .slide-right{
@@ -180,7 +182,7 @@ select{
     background-color: transparent;
     font-size: 30px;
     /*padding-left: 20px;*/
-    padding-top: 152px;    
+    /*padding-top: 152px;*/    
 }
 
 a{
@@ -194,12 +196,60 @@ a{
     padding-right: 22%;  
 }
 
-@media screen and (max-width:810px){
-    body{
-        padding-bottom: 0;
-        }
+:root{
+    --background-image: url(../image/shillong-2847249\ 1.png);
+    --font-color:  rgb(255, 255, 255);
+    --border-color: 1px solid rgb(255, 255, 255);   
+}
 
+@media screen and (max-width:1748px){
+
+    :root{
+        --background-image: none;
+        --font-color:  black;
+        --border-color: 1px solid rgb(0, 0, 0);
+           
+    }
+    
+    body{
+        height: auto;        
+        }
+    main{
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        align-items: center;  
+        }
+    #left{
+        align-items: center;
+        text-align: center;
+        padding-right: 0;
+        }
+    #right{
+        flex-direction:row;           
+        }
+    h1{
+         width: 800px;    
+        text-align: center;
+        }
+    .explore{
+        padding-left: 0;    
+        }
+    .photo-block{
+        display: flex;                
+        gap: 39px;
+        align-items: center;
+        text-align: center;
+        }
     img{
         max-width: 100%;
     }
-}
+    .photo{
+        display: grid;  
+        justify-items: stretch;
+    }
+    a{
+        padding-right: 0;
+        padding-top: 30px;  
+    }
+    }
